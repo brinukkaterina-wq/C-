@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+    font-family: 'Lora', serif;
+    background: #fafafa;
+}
+
+
+.hero {
+    position: relative;
+    background-image: url("image/Заставка.png");
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 0 0 10px rgba(0,0,0,0.6);
+}
+
+.hero h1 {
+    font-size: 55px;
+    margin-top: 60px;
+}
+
+
+.menu-hero {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+}
+
+.menu-hero ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-hero a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 8px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.menu-hero a:hover {
+    background: rgba(255,255,255,0.25);
+}
+
+
+.blocks {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+}
+
+.block {
+    width: 30%;
+    background: #ffe4e6;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.block img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.block:hover {
+    transform: scale(1.03);
+}
+
+
+.blocks-section {
+    display: none;
+}
+
+.blocks-section.active {
+    display: block;
+}
+
+.recipe-section {
+    display: none;
+    padding: 40px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.recipe-section.active {
+    display: block;
+}
+
+
+.recipe-item {
+    margin-bottom: 60px;
+    padding: 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.08);
+}
+
+
+.recipe-item h3 {
+    text-align: center;
+    font-size: 22px;
+}
+
+
+.recipe-item p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: black;
+}
+
+
+iframe {
+    width: 100%;
+    max-width: 560px;
+    height: 315px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+
+#contacts {
+    text-align: center;
+    font-size: 18px;
+}
